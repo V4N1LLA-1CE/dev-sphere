@@ -29,4 +29,9 @@ export const devs = [
     username: "YourAverageDev",
     email: "yad042@gmail.com",
   },
+  {
+    id: 7,
+    username: "ChaseOwens",
+    email: "c.owens1993@yahoo.com",
+  },
 ];

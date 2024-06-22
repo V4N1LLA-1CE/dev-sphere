@@ -1,11 +1,19 @@
 import React from "react";
+import Card from "./Card.js";
 
-const CardList = () => {
+const CardList = ({ devs }) => {
   return (
-    <div className="flex justify-center gap-6">
-      <Card id={devs[0].id} username={devs[0].username} email={devs[0].email} />
-      <Card id={devs[1].id} username={devs[1].username} email={devs[1].email} />
-      <Card id={devs[2].id} username={devs[2].username} email={devs[2].email} />
+    <div className="flex flex-wrap justify-center gap-6">
+      {devs.map((dev, i) => {
+        return (
+          <Card
+            key={i}
+            id={devs[i].id}
+            username={devs[i].username}
+            email={devs[i].email}
+          />
+        );
+      })}
     </div>
   );
 };
