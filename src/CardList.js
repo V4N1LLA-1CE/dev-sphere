@@ -3,7 +3,7 @@ import Card from "./Card.js";
 
 const CardList = ({ devs }) => {
   return (
-    <div className="flex flex-wrap justify-center gap-6">
+    <section className="flex flex-wrap justify-center gap-6">
       {devs.map((dev, i) => {
         return (
           <Card
@@ -14,7 +14,7 @@ const CardList = ({ devs }) => {
           />
         );
       })}
-    </div>
+    </section>
   );
 };
 
