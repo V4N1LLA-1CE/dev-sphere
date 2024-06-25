@@ -59,4 +59,14 @@ export const devs = [
     username: "ZacParker",
     email: "z.parker@hotmail.com",
   },
+  {
+    id: 13,
+    username: "sshirona",
+    email: "sandersianander@gmail.com",
+  },
+  {
+    id: 14,
+    username: "mkuratana",
+    email: "marcokuratana@gmail.com",
+  },
 ];
