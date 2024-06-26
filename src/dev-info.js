@@ -1,4 +1,4 @@
-export const devs = [
+export const devsInfo = [
   {
     id: 1,
     username: "V4N1LLA-1CE",
