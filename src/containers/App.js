@@ -3,6 +3,7 @@ import CardList from "../components/CardList";
 import { devs } from "../dev-info";
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
+import EmptyListError from "../components/EmptyListError";
 
 class App extends Component {
   constructor() {
@@ -35,7 +36,9 @@ class App extends Component {
         <main>
           <SearchBox searchChange={this.onSearchChange} />
           <Scroll>
-            <CardList devs={filteredDevs} />
+            <EmptyListError devs={filteredDevs}>
+              <CardList devs={filteredDevs} />
+            </EmptyListError>
           </Scroll>
         </main>
       </div>
