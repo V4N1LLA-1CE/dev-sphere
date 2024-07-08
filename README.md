@@ -1,4 +1,4 @@
-# DevSphere
+# DEVSPHERE
 
 ### Greetings!
 
